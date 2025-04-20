@@ -159,7 +159,7 @@ width: 100%;
   color: white;
   text-align: center;
   border-radius: 25%;
-  padding: 50px 0;
+  padding: 100px 0;
   border-top-left-radius: 50% 10%;
   border-top-right-radius: 50% 10%;
   border-bottom-left-radius: 50% 10%;
@@ -197,7 +197,7 @@ margin-top: 10rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 0 2rem;
+  padding: 0px 2rem;
 }
 
 .about-me img{
@@ -220,7 +220,7 @@ margin-top: 10rem;
   padding: 0 2rem;
   text-align: center;
   padding: 100px 0;
-  margin-top:08rem
+  margin-top:2rem
 
 }
 
@@ -268,7 +268,7 @@ margin-top: 20px;
 margin-top: 8rem;
 background-color: rgb(18, 18, 18);
 color: white;
-padding: 80px 20px;
+padding: 0px 20px;
 text-align: center;
 border-top: 2px solid white;
 border-top-left-radius: 50% 10%;
@@ -399,6 +399,11 @@ font-weight: bold;
 margin-top: 10px;
 margin-right: 2rem;
  }
+ .about-me{
+  padding-top: 20px;}
+  .header{
+    padding-top: 25px;
+  }
  .about-me-content{
   margin-top: 6rem;
     font-size: 20px;
@@ -408,14 +413,15 @@ margin-right: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding-bottom: 4rem;
 
 }
  .about-me img{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-bottom: 20px;
-  margin-top: 7.5rem;
+  margin-bottom: 30px;
+
 
 }
 

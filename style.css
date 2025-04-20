@@ -400,12 +400,13 @@ margin-top: 10px;
 margin-right: 2rem;
  }
  .about-me{
-  padding-top: 20px;}
+  padding:10px 10px;
+}
   .header{
     padding-top: 25px;
   }
  .about-me-content{
-  margin-top: 6rem;
+
     font-size: 20px;
     color: white;
     text-align: center;
@@ -413,7 +414,7 @@ margin-right: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-bottom: 4rem;
+
 
 }
  .about-me img{

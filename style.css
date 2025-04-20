@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;/*default box model setup*/
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+body {
+ background-color:black;
+  height: 100%; /* Add this to center vertically */
+}
+
+/*navbar*/
+.custom-navbar {
+ background-color: #000000 !important;/* Set the background color with black using bootstrap */
+}
+
+#nav {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid white;
+}
+
+
+.navbar-nav li{
+  display: flex;
+  justify-content: space-between;
+margin-right: 20px;
+
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+
+}
+
+.navbar ul li a,
+.navbar ul li a:visited,
+.navbar ul li a:link,
+.navbar ul li p {
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(red,yellow);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;
+  box-shadow: yellow 0px 0px 05px, red 0px 0px 0px, red 0px 0px 0px, red 0px 0px 0px;    
+}
+.navbar ul li p {
+ border: 1px solid ;
+ padding: 0 20px;
+}
+.navbar-brand{
+  background: linear-gradient(red,yellow);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;
+  font-weight: bolder;
+}
+
+.navbar ul li a:hover {
+  background-color: #3a3d4e;
+  border-radius: 5px;
+}
+.navbar-nav .nav-item {
+ margin: 0 10px; /* space on left and right of each li */
+ display: flex;
+ justify-content: space-around;
+}
+
+/*....................end of navbar*.........................../
+
+
+/*   Container for the main content */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;         /* text and image container inbetween have gap 50%*/
+  height: 100vh;     /* full screen height */
+  padding: 0 2rem;   
+}
+
+.my-information{
+  color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* name container */
+  justify-content: center;
+  padding-left: 6.4%;
+  margin-bottom: 4rem;
+}
+
+.my-information span{
+    font-size: 25px;
+    color: yellow;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.my-information h1{
+  font-size: 60px;
+  margin-bottom: 1rem;
+ 
+  
+}
+.my-information h4{
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: bold;
+}
+.my-information p{
+  font-size: 29px;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: bold;
+ 
+}
+
+.resume-btn{
+ background-color: yellow; 
+ padding: 15px 25px ;
+ border-radius: 25px;
+ text-decoration: none;
+ color: black;
+ font-weight: bold;
+}
+
+.image-container img{
+  border-radius: 50%;
+  width:80%;
+  height:50%;
+  background-position: center;  
+  background-size: cover;
+
+  margin-left: 3rem;
+  
+}
+/*...........................end of image container......................*/
+
+/*about-me*/
+.about-me{
+width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 25%;
+  padding: 50px 0;
+  border-top-left-radius: 50% 10%;
+  border-top-right-radius: 50% 10%;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+  margin-top: 50px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.header span{
+color:yellow;
+font-size: 50px;
+text-align: center;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+.about-me-content{
+margin-top: 10rem;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0 2rem;
+}
+
+.about-me img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+
+}
+/*about-me end*/
+/*..................end of about-me...................*/
+
+
+/*skills*/
+.skills{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  padding: 0 2rem;
+  text-align: center;
+  padding: 100px 0;
+  margin-top:08rem
+
+}
+
+.skills-container{
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* 4 columns */
+gap: 20px;
+max-width: 1000px;
+margin: auto;
+padding: 20px;
+
+
+}
+.skills-item{
+  display: flex;
+align-items: center;
+background-color: rgb(34, 31, 31);
+width: 200px;
+height: 80px;
+border-radius: 10px;
+
+
+
+}
+.skills-item h6{
+  color: white;
+  font-size: 20px;
+  margin-top: 8px;
+  text-align: center;
+  padding-left: 1rem;
+
+
+}
+.skills-item img{
+width: 50px;
+height: 50px;
+margin-left: 10px;
+margin-top: 20px;
+
+}
+/*skills section end*/
+
+
+.contact-me {
+margin-top: 8rem;
+background-color: rgb(18, 18, 18);
+color: white;
+padding: 80px 20px;
+text-align: center;
+border-top: 2px solid white;
+border-top-left-radius: 50% 10%;
+  border-top-right-radius: 50% 10%;
+}
+
+.contact-header {
+font-size: 40px;
+margin-bottom: 30px;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.contact-header span {
+color: yellow;
+font-size: 40px;
+}
+
+.contact-info {
+font-size: 20px;
+line-height: 2;
+}
+
+.contact-info a {
+color: yellow;
+text-decoration: none;
+}
+
+.contact-info a:hover {
+text-decoration: underline;
+}
+
+.copyrights{
+margin-top: 2rem;
+font-size: 16px;
+color: white;
+text-align: center;
+font-weight: bold;
+}
+
+@media (max-width: 768px) {
+.contact-header {
+  font-size: 20px;
+}
+
+.contact-info {
+  font-size: 16px;
+}
+.contact-header {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.contact-header span {
+  color: yellow;
+  font-size: 20px;
+}
+
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* stays on top */
+  background-color: black;
+}
+
+ .navbar ul {
+   flex-direction: colum;
+   align-items: center;
+   gap: 1rem;
+ }
+
+ .container {
+   flex-direction: column;
+   height: auto;
+   padding-top: 5rem;
+   text-align: center;
+ }
+
+ .my-information {
+   width: 100%;
+   align-items: center;
+   padding-left: 0;
+  margin-bottom: 0px
+   ;
+ }
+
+ .my-information h1 {
+   font-size: 2.5rem;
+ }
+
+ .my-information h4 {
+   font-size: 1.5rem;
+ }
+
+ .my-information p {
+   font-size: 1.2rem;
+   font-weight: normal;
+ }
+
+ .my-information span {
+   font-size: 1.2rem;
+ }
+
+ .image-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   
+ }
+
+ .image-container img {
+   width: 70%;
+   height: auto;
+margin-top: 10px;
+margin-right: 2rem;
+ }
+ .about-me-content{
+  margin-top: 6rem;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+ .about-me img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-top: 7.5rem;
+
+}
+
+
+.skills {
+width: 100%;
+min-height: 100vh;
+background-color: black;
+color: white;
+padding: 0px 2rem;
+text-align: center;
+
+}
+
+.skills h2{
+font-size: 40px;
+text-align: center;
+
+}
+
+.skills span{
+font-size: 40px;
+text-align: center;
+
+}
+.skills-container {
+display: grid;
+grid-template-columns: repeat(1,minmax(180px, 1fr));
+gap: 20px;
+max-width: 1000px;
+
+}
+
+
+
+.skills-item {
+display: flex;
+align-items: center;
+background-color: rgb(34, 31, 31);
+border-radius: 10px;
+justify-content: start;
+width: 100%;
+height: 80px;
+transition: transform 0.3s ease;
+
+}
+
+.skills-item:hover {
+transform: scale(1.05);
+}
+
+.skills-item img {
+width: 50px;
+height: 50px;
+margin-left: 10px;
+margin-top: 20px;
+}
+
+.skills-item h6 {
+color: white;
+font-size: 20px;
+margin-top: 8px;
+text-align: center;
+padding-left: 1rem;
+
+}
+
+}

@@ -12,37 +12,31 @@
 
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar" id="nav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark st">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">MOHAMED YUSUF</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+  
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 ml-5" id="navbar-links">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">contact</a>
-          </li>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        
       </div>
+    </div>
   </nav>
     
 <!-- Navbar End -->"
 
 <!-- container Section Start -->
 
-<div class="container">
+<div class="container" id="home">
   <div class="my-information">
     <h4  data-aos="fade-right" data-aos-duration="2000">hello, it's me</h4>
     <h1  data-aos="fade-right" data-aos-duration="3000">MOHAMED YUSUF</h1>
@@ -61,21 +55,25 @@
 
   <!--about me container-->
 </div>
-<div class="about-me">
+<div class="about-me" id="about">
+  <div class="about-me-header" data-aos="fade-up" data-aos-duration="2000">
+    <h2 class="header">About <span>Me</span></h2></div>
+    <div class="about-me-content" data-aos="fade-up" data-aos-duration="2000">
+      <p>Hi, I'm Mohamed Yusuf, a web developer with a passion for creating beautiful and functional websites. I specialize in front-end development, using HTML, CSS, and JavaScript to build responsive and user-friendly interfaces.</p>
+      <p> I enjoy with collaborating designers and back-end developers to bring projects to life.</p>
+  </div>
 <div>  
 
-  <h2 class="header">About <span>Me</span></h2></div>
+
   
-  <div class="about-me-content" data-aos="fade-up" data-aos-duration="2000">
-    <p>Hi, I'm Mohamed Yusuf, a web developer with a passion for creating beautiful and functional websites. I specialize in front-end development, using HTML, CSS, and JavaScript to build responsive and user-friendly interfaces.</p>
-    <p> I enjoy with collaborating designers and back-end developers to bring projects to life.</p>
+
 
   <img src="WhatsApp Image 2025-04-19 at 15.27.55_75d52582 (1).png" alt="My Image" class="about-image" > 
 </div>
 
 </div>
 <!--skills container-->
-<div class="skills">
+<div class="skills" id="skills">
   <h2 class="header">My <span>Skills</span></h2>
   
   <div class="skills-container">
@@ -198,6 +196,7 @@
   menuToggle.addEventListener('click', () => {
     navbarLinks.classList.toggle('show');
   });
+
 
 
 </script>

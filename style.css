@@ -12,6 +12,7 @@ html {
 body {
   background-color: black;
   height: 100%;
+  width: 100%;
  
   
 }
@@ -133,13 +134,32 @@ body {
 }
 
 .resume-btn {
-  background-color: yellow;
+ border: 2px solid yellow;
   padding: 15px 25px;
   border-radius: 25px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
+  box-shadow: 12px 10px 25px 2px  rgba(255, 255, 0, 0.4)
 }
+
+.resume-btn {
+
+  padding: 15px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.6); /* glowing yellow effect */
+
+}
+
+.resume-btn:hover {
+background-color: yellow;
+color: #000000;
+
+}
+
 
 .image-container img {
   border-radius: 50%;
@@ -149,6 +169,7 @@ body {
   background-size: cover;
   margin-left: 3rem;
 }
+
 
 /* About Me */
 .about-me {
@@ -258,6 +279,77 @@ body {
   margin-left: 10px;
 
 }
+
+
+/*project section*/
+.project-container{
+  width: 100%;
+  
+}
+
+.project-container h1{
+padding:60px 0px ;
+font-weight: bold;
+letter-spacing: 2px;
+font-size: 50px;
+text-transform: uppercase;
+}
+
+.project-container span {
+  color: yellow;
+ font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;  
+}
+
+.parent-item{
+
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.project-item{
+  border: 2px solid white;
+  width: 350px;
+  height: 280px;
+padding: 7px 2px;
+}
+
+.project-item img{
+ width: 335px;
+ 
+
+}
+
+.child-item{
+  width:100%;
+ height:45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+ 
+}
+
+.child-item a{
+  border-radius: 1px;
+  background-color:rgba(63, 72, 82, 0.731);
+  border: 1px solid white;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+}
+.child-item a:hover {
+
+  background-color:rgba(63, 72, 82, 0.731) ;
+  color:white;
+  transform: scale(1.30);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid white;
+}
+
 
 /* Contact Me */
 .contact-me {
@@ -377,6 +469,7 @@ body {
   .skills h2,
   .skills span {
     font-size: 40px;
+    padding-top: 100px;
   }
 
   .skills-item {
@@ -418,4 +511,65 @@ body {
   .skills-item h6 {
     font-size: 16px;
   }
+}
+
+/* By default show desktop layout and hide carousel */
+.carousel-wrapper {
+  display: none;
+}
+
+.parent-item {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .carousel-wrapper {
+    display: block;
+  }
+
+  .parent-item {
+    display: none;
+  }
+}
+
+/* Project styling */
+.project-item {
+  border: 2px solid white;
+  width: 100%;
+  max-width: 350px;
+  padding: 10px;
+  background-color: #1f1f1f;
+  margin: 0 auto;
+}
+
+.project-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.child-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.child-item a {
+  background-color: rgba(63, 72, 82, 0.8);
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.child-item a:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
 }

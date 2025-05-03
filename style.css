@@ -134,29 +134,23 @@ body {
 }
 
 .resume-btn {
+  padding:15px 50px;
  border: 2px solid yellow;
-  padding: 15px 25px;
   border-radius: 25px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  box-shadow: 12px 10px 25px 2px  rgba(255, 255, 0, 0.4)
 }
 
-.resume-btn {
 
-  padding: 15px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  box-shadow: 0 0 15px rgba(255, 255, 0, 0.6); /* glowing yellow effect */
-
-}
 
 .resume-btn:hover {
-background-color: yellow;
-color: #000000;
+background-color: rgb(245, 245, 31);
+color: black;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -174,7 +168,7 @@ color: #000000;
 /* About Me */
 .about-me {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: black;
   color: white;
   padding: 100px 2rem;
